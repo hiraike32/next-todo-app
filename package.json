@@ -1,0 +1,27 @@
+{
+  "name": "next-todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiraike32/next-todo-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiraike32/next-todo-app/issues"
+  },
+  "homepage": "https://github.com/hiraike32/next-todo-app#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
