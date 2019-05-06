@@ -23,13 +23,15 @@ const App = () => {
   return (
     <>
       <h1>Todo App</h1>
-      <input
-        type="text"
-        name="todo"
-        onChange={e => setTmpTodo(e.target.value)}
-        value={tmpTodo}
-      />
-      <button onClick={addTodo}>Add</button>
+      <div className="form">
+        <input
+          type="text"
+          name="todo"
+          onChange={e => setTmpTodo(e.target.value)}
+          value={tmpTodo}
+        />
+        <button onClick={addTodo}>Add</button>
+      </div>
       <ul>
         {todos.map((todo, index) => {
           return (
@@ -40,6 +42,19 @@ const App = () => {
           );
         })}
       </ul>
+      <style>{`
+        h1 {
+          text-align: center;
+        }
+        .form {
+          display: flex;
+          justify-content: center;
+        }
+        ul {
+          width: 200px;
+          margin: 10px auto;
+        }
+      `}</style>
     </>
   );
 };
